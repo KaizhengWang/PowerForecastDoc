@@ -22,7 +22,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output_dir", type=str, default="/output", help="Output directory.")
     parser.add_argument("--artifact_dir", type=str, default="/model", help="Model artifact directory.")
     parser.add_argument("--time_start", type=str, required=True, help="Forecast start time.")
-    parser.add_argument("--submission_type", type=int, default=0, help="Value for the type column.")
+    parser.add_argument("--submission_type", type=int, default=1, help="Value for the type column.")
     parser.add_argument("--force_cpu", action="store_true", help="Force CPU inference.")
     return parser.parse_args()
 
